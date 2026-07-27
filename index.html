@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarde de drama | Inicio</title>
+</head>
+<body>
+   <header>
+        <a href="#" aria-label="Inicio" title="Inicio">
+    <!-- dentro del header va: logo, titulo de la pagina y la barra de navegacion   -->
+            <figure>
+                <img src="./assets/logos/Tarde-de-drama-logo.png" alt="Logo de Tarde de Drama, sitio de recomendaciones de mangas" title="Logo de Tarde de Drama">
+            </figure>
+        </a>
+
+        <h1>Tarde de Drama | Inicio</h1>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./pages/demografias.html" aria-label="Demografías" title="Demografías">Demografías</a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html" aria-label="Contacto" title="Contacto">Contactanos</a>
+                </li>
+                <li>
+                    <a href="./pages/yo.html" aria-label="Acerca de mi" title="Acerca de mi">Acerca de mi</a>
+                </li>
+                <li>
+                    <a href="./pages/recomendaciones.html" aria-label="Recomendaciones" title="Recomendaciones">Recomendaciones</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <section>
+            <h2>Presentación</h2>
+            <p>Un espacio dedicado a compartir recomendaciones de mangas que creo que les pueden llegar a gustar.</p>
+        </section>
+
+        <section>
+            <h2>Biografía breve</h2>
+            <article>
+                <p>Soy una adulta joven de 21 años que está cursando la carrera de animación. Soy muy apasionada por el mundo de los mangas, animes y caricaturas, ya que forman una parte muy importante de mi vida.</p>
+            </article>
+        </section>
+            <figure>
+                <img src="./assets/logos/pila de mangas.jpg" alt="Ilustración representativa del mundo del manga" title="Tarde de Drama">
+                <figcaption>Espacio dedicado al análisis y recomendación de mangas.</figcaption>
+            </figure>
+        <section>
+            <h2>Servicios o habilidades</h2>
+            <ul>
+                <li>Recomendaciones de mangas divididas por demografías.</li>
+                <li>Explicaciones de qué trata la trama de cada obra.</li>
+                <li>A futuro, clasificaciones y selecciones por géneros.</li>
+            </ul>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>Desarrollado por Luisina Delgado Lazaro</p>
+        <p>&copy;<span id="year"></span>Todos los Derechos Reservados</p>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" title="Instagram">
+                        <img src="./assets/logos/instagram.png" alt="Logo de Instagram" title="Logo de Instagram" aria-label="Logo de Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank" title="WhatsApp">
+                        <img src="./assets/logos/whatsapp.png" alt="Logo de WhatsApp" title="Logo de WhatsApp" aria-label="Logo de WhatsApp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank" title="Facebook">
+                        <img src="./assets/logos/facebook.png" alt="Logo de Facebook" title="Logo de Facebook" aria-label="Logo de Facebook">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
