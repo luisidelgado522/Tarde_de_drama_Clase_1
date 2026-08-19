@@ -179,3 +179,49 @@ footer nav ul {
 }
 
 
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.grid-formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+/* Media Query */
+@media (min-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+            "header header"
+            "main main"
+            "footer footer";
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    header {
+        grid-area: header;
+        grid-column: span 2;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+        grid-column: span 2;
+    }
+
+    .grid-formulario {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
