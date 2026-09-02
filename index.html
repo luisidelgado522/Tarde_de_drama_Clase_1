@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- CSS  -->
-         <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Tarde de Drama | Inicio</title>
 </head>
 <body>
     <div class="grid-container">
         <header>
             <a href="#" aria-label="Inicio" title="Inicio">
-        <!-- dentro del header va: logo, titulo de la pagina y la barra de navegacion   -->
                 <figure>
                     <img class="Logo" src="./assets/logos/Tarde-de-drama-logo.png" alt="Logo de Tarde de Drama, sitio de recomendaciones de mangas" title="Logo de Tarde de Drama">
                 </figure>
             </a>
             <h1>Tarde de Drama | Inicio</h1>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a class="nav-link" href="./pages/demografias.html" aria-label="Demografías" title="Demografías">Demografías</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./pages/contacto.html" aria-label="Contacto" title="Contacto">Contactanos</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./pages/sobre-mi.html" aria-label="Acerca de mi" title="Acerca de mi">Acerca de mi</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./pages/recomendaciones.html" aria-label="Recomendaciones" title="Recomendaciones">Recomendaciones</a>
-                    </li>
-                </ul>
+    
+            <!-- El Navbar de Bootstrap metido dentro del header -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/demografias.html">Demografías</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/sobre-mi.html">Acerca de mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/recomendaciones.html">Recomendaciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header> 
 
@@ -49,11 +61,39 @@
                 <article>
                     <p>Soy una adulta joven de 21 años que está cursando la carrera de animación. Soy muy apasionada por el mundo de los mangas, animes y caricaturas, ya que forman una parte muy importante de mi vida.</p>
                 </article>
+
                 <figure>
-                    <img class="imagen-mangas" src="./assets/logos/pila de mangas.jpg" alt="Ilustración representativa del mundo del manga" title="Tarde de Drama">
+                    <div id="carouselMangas" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselMangas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselMangas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselMangas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 imagen-mangas" src="./assets/logos/pila de mangas.jpg" alt="Ilustración representativa del mundo del manga" title="Tarde de Drama">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 imagen-mangas" src="./assets/logos/calle_one_piece.jpg" alt="Calle temática de One Piece" title="Calle de One Piece">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 imagen-mangas" src="./assets/logos/mangas_japon.jpg" alt="Mangas y cultura de Japón" title="Mangas de Japón">
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMangas" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMangas" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
                     <figcaption>Espacio dedicado al análisis y recomendación de mangas.</figcaption>
                 </figure>
-            </section>
+                </section>
                 
             <section>
                 <h2>Servicios o habilidades</h2>
@@ -96,5 +136,7 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

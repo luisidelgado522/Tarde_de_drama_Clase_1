@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
     <title>Tarde de Drama | Recomendaciones</title>
 </head>
@@ -15,21 +18,31 @@
                 </figure>
             </a>
             <h1 class="h1-recomendaciones">Tarde de Drama | Recomendaciones</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a class="nav-link" href="./demografias.html" aria-label="Demografías" title="Demografías">Demografías</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./contacto.html" aria-label="Contacto" title="Contacto">Contactanos</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="./sobre-mi.html" aria-label="Acerca de mi" title="Acerca de mi">Acerca de mi</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#" aria-label="Recomendaciones" title="Recomendaciones">Recomendaciones</a>
-                    </li>
-                </ul>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./demografias.html">Demografías</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contactanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sobre-mi.html">Acerca de mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Recomendaciones</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main>
@@ -87,6 +100,67 @@
                     <p>Sinopsis e inicio de la trama (Alerta de Spoilers): La historia sigue al Dr. Kenzo Tenma, un prometedor e impecable neurocirujano japonés que trabaja en un prestigioso hospital de Alemania. Su carrera y su compromiso futuro parecen asegurados, hasta que un día decide priorizar su ética médica y salvar la vida de un niño huérfano herido de bala llamado Johan, en lugar de operar al alcalde de la ciudad. Años más tarde, Tenma descubre que aquel niño al que le salvó la vida creció para convertirse en un sociópata despiadado y manipulador. Lleno de culpa, Tenma se ve obligado a abandonar su vida acomodada y sus valores profesionales para perseguir a Johan e intentar matarlo.</p>
                 </article>
             </section>
+
+            <section class="mt-5 pt-4 border-top">
+                <div class="container">
+                    <!-- Título y bajada centrados para que no se amontonen -->
+                    <div class="row mb-4">
+                        <div class="col-lg-8 mx-auto text-center">
+                            <h2>Próximos mangas de los que voy a contar la sinopsis</h2>
+                            <p class="text-muted mt-2">Un pantallazo de los próximos títulos que se vienen al sitio para seguir analizando historias imperdibles.</p>
+                        </div>
+                    </div>
+
+                    <!-- Carrusel centrado con un ancho controlado -->
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6 mx-auto">
+                            <div id="carouselProximos" class="carousel slide shadow-sm rounded overflow-hidden" data-bs-ride="carousel">
+                                <!-- Indicadores -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselProximos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselProximos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselProximos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselProximos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselProximos" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselProximos" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                </div>
+                                
+                                <!-- Imágenes del carrusel con altura controlada -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="../assets/mangas/witchhatatelier.jpg" alt="Portada de Witch Hat Atelier" style="height: 450px; object-fit: contain; background-color: #f8f9fa;">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../assets/mangas/Paradisekiss.jpg" alt="Portada de Paradise Kiss" style="height: 450px; object-fit: contain; background-color: #f8f9fa;">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../assets/mangas/dragonball.jpg" alt="Portada de Dragon Ball" style="height: 450px; object-fit: contain; background-color: #f8f9fa;">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../assets/mangas/ranma_tomo_1.jpg" alt="Portada de Ranma 1/2" style="height: 450px; object-fit: contain; background-color: #f8f9fa;">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../assets/mangas/20thcenturyboys_vol1.jpg" alt="Portada de 20th Century Boys" style="height: 450px; object-fit: contain; background-color: #f8f9fa;">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block w-100" src="../assets/mangas/kaiju n8 vol1.jpg" alt="Portada de Kaiju No. 8" style="height: 450px; object-fit: contain; background-color: #f8f9fa;">
+                                    </div>
+                                </div>
+
+                                <!-- Botones de navegación -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProximos" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Anterior</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProximos" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Siguiente</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer>
@@ -118,5 +192,7 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
