@@ -142,7 +142,7 @@ section article {
     margin: 0;
     flex-shrink: 0;
 }
-/* Formulario de Contacto */
+
 form {
     display: flex;
     flex-direction: column;
@@ -170,7 +170,6 @@ form {
     object-fit: cover; 
 }
 
-/* Banners de las Demografías en demografías */
 .banner-demografia {
     width: 25vw;   
     height: auto;  
@@ -249,7 +248,6 @@ footer a:active {
     transform: translateY(0);
 }
 
-/* Botones generales y controles de carrusel */
 .btn, 
 button,
 .carousel-control-prev,
@@ -280,7 +278,6 @@ button:active,
     transform: scale(0.98);
 }
 
-/* Tarjetas, portadas y elementos interactivos */
 .card,
 .portada-manga {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
