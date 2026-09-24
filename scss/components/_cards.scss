@@ -1,0 +1,26 @@
+@use "../utilities/variables" as v;
+
+.card-manga {
+    background-color: v.$color-del-fondo;
+    border: 1px solid v.$color-de-los-links;
+    border-radius: 12px;
+    .card-title {
+        color: v.$color-del-subtitulo;
+        font-weight: 600;
+    }
+    .badge {
+        background-color: v.$color-de-los-links;
+        color: v.$color-del-subtitulo2;
+        font-size: 0.85rem;
+        padding: 6px 12px;
+        border-radius: 6px;
+    }
+}
+
+.card:hover{
+    background-color: v.$color-del-fondo;
+}
+
+.card:focus{
+    outline: 2px solid v.$color-del-subtitulo;
+}

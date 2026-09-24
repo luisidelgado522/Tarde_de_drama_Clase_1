@@ -1,0 +1,20 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.nav-link{
+    color: v.$color-de-los-links;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link:hover {
+    color: v.$color-del-subtitulo;
+} 
+
+.navbar-nav .nav-link:focus {
+    outline: 2px solid v.$color-del-subtitulo;
+}
+
+.navbar-nav .nav-link:active {
+    color: v.$color-del-texto;
+}

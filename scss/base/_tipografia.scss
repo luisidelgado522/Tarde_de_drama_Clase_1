@@ -1,0 +1,34 @@
+@use "../utilities/variables" as v;
+/* Font Family: Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* font-family: "Quicksand", sans-serif */
+
+body{
+    font-family: v.$fuente-principal;
+}
+
+h1{
+    color: v.$color-del-titulo;
+    font-size: v.$tamaño-del-titulo;
+    font-weight: 600;
+}
+
+h2{
+    color: v.$color-del-subtitulo;
+    font-size: v.$tamaño-del-subtitulo;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p{
+    figcaption{
+        color: v.$color-del-subtitulo2;
+        font-size: v.$tamaño-del-subtitulo2;
+    }
+}
+
+li{
+    color: v.$color-del-texto;
+    font-size: v.$tamaño-del-subtitulo2;
+    list-style: none;
+}

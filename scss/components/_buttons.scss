@@ -1,0 +1,37 @@
+@use "../utilities/mixins" as m;
+@use "../utilities/variables" as v;
+
+/* Carrusel */
+.carousel {
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    height: 450px;    
+}
+
+.carousel-inner img,
+.imagen-mangas {
+    object-fit: contain; 
+}
+
+.btn:hover, 
+button:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: v.$color-del-subtitulo;
+}
+
+.btn:focus, 
+button:focus,
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: 2px solid v.$color-del-subtitulo;
+}
+.btn:active, 
+button:active,
+.carousel-control-prev:active,
+.carousel-control-next:active {
+    background-color: v.$color-del-texto;
+}

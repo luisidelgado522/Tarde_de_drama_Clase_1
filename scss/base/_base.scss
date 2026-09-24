@@ -1,0 +1,84 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: v.$color-del-fondo;
+}
+
+main{
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    a:hover {
+    outline: 2px solid v.$color-del-subtitulo;
+    }
+
+    a:focus {
+        outline: 2px solid v.$color-del-subtitulo;
+    }
+
+    a:active {
+        color: v.$color-del-texto;
+    }
+}
+
+section{
+    @include m.flex(column, nowrap, space-between, center, 30px);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+
+    h2{
+        width: 220px;
+    }
+
+    article{
+        flex: 1;
+    }
+}
+
+.biografia-seccion{
+    @include m.flex(row, wrap, flex-start, center, 30px);
+    figure{
+        margin:0;
+    }
+    figcaption{
+        font-size: 0.8rem;
+    }
+}
+
+form{
+    @include m.flex(column, nowrap, space-between, center, 15px);
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.grid-formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.banner-demografia {
+    width: 25vw;   
+    height: auto;  
+}
+
+.portada-manga {
+    width: 200px;       
+    height: auto; 
+}
+
+.portada-manga:hover {
+    background-color: v.$color-del-fondo;
+}     
+

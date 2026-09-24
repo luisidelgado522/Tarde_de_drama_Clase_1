@@ -1,0 +1,46 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.redes-sociales {
+    height: 5vh;
+    width:auto;
+}
+
+.whatsapp-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    ul {
+        li {
+            list-style: none;
+        }
+    }
+    
+    nav {
+        margin-top: 15px;
+        ul{
+            @include m.flex(row, nowrap, space-between, center, 0);
+            list-style: none;
+        
+            li{list-style: none;
+            }
+        }
+    }
+
+    a:hover {
+        outline: 2px solid v.$color-del-subtitulo;
+    }
+
+    a:focus {
+        outline: 2px solid v.$color-del-subtitulo;
+    }
+
+    a:active {
+        color: v.$color-del-texto;
+    }
+}
