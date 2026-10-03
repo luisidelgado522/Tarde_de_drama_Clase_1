@@ -17,10 +17,13 @@
     }
 }
 
-.card:hover{
-    background-color: v.$color-del-fondo;
-}
+.card{
+    @extend .card-manga;
+    &:hover {
+        background-color: v.$color-del-fondo;
+    }
 
-.card:focus{
-    outline: 2px solid v.$color-del-subtitulo;
+    &:focus {
+        outline: 2px solid v.$color-del-subtitulo;
+    }
 }

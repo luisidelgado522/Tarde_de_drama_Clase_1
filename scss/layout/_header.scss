@@ -4,6 +4,10 @@
 .Logo{
     width: 10vw;
     height: auto;
+    transition: transform 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 header {
@@ -29,10 +33,12 @@ header {
     }
 
     .navbar-nav {
-        .nav-link.active {
-            color: v.$color-de-los-links;
-            font-weight: 600;
-        }
+        .nav-link{
+            &.active{
+                color:v.$color-de-los-links;
+                font-weight: 600;
+            }
+        }    
     }
 
     .navbar{

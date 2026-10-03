@@ -16,22 +16,16 @@
     object-fit: contain; 
 }
 
-.btn:hover, 
-button:hover,
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: v.$color-del-subtitulo;
-}
+.btn, button, .carousel-control-prev, .carousel-control-next {
+    &:hover{
+        background-color: v.$color-del-subtitulo;
+    }
 
-.btn:focus, 
-button:focus,
-.carousel-control-prev:focus,
-.carousel-control-next:focus {
-    outline: 2px solid v.$color-del-subtitulo;
-}
-.btn:active, 
-button:active,
-.carousel-control-prev:active,
-.carousel-control-next:active {
-    background-color: v.$color-del-texto;
+    &:focus {
+        outline: 2px solid v.$color-del-subtitulo;
+    }
+
+    &:active {
+        background-color: v.$color-del-texto;
+    }
 }

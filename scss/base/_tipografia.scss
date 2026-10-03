@@ -20,11 +20,9 @@ h2{
     margin-bottom: 10px;
 }
 
-p{
-    figcaption{
+p, figcaption{
         color: v.$color-del-subtitulo2;
         font-size: v.$tamaño-del-subtitulo2;
-    }
 }
 
 li{

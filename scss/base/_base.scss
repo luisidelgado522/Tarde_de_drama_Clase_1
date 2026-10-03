@@ -16,45 +16,67 @@ main{
     max-width: 1200px;
     margin: 0 auto;
 
-    a:hover {
-    outline: 2px solid v.$color-del-subtitulo;
+    &:hover, 
+    &:focus {
+        background-color: v.$color-del-fondo;
     }
-
-    a:focus {
-        outline: 2px solid v.$color-del-subtitulo;
-    }
-
-    a:active {
+    &:active {
         color: v.$color-del-texto;
     }
 }
 
-section{
+section {
     @include m.flex(column, nowrap, space-between, center, 30px);
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 8px;
 
-    h2{
+    h2 {
         width: 220px;
+
+
+        &.titulo-a-la-derecha {
+            width: 100%;
+            text-align: center;
+        }
     }
 
-    article{
+    article {
         flex: 1;
+        margin-left: 60px;
+    }
+
+    // para tablet
+    @media (min-width: 768px) {
+        flex-direction: row;
+
+        article {
+            margin-left: 60px;
+        }
+    }
+
+    // para computadora de escritorio
+    @media (min-width: 1024px) {
+        gap: 30px;
     }
 }
 
-.biografia-seccion{
+.biografia-seccion {
     @include m.flex(row, wrap, flex-start, center, 30px);
-    figure{
+    figure {
         margin:0;
     }
-    figcaption{
+
+    figcaption {
         font-size: 0.8rem;
+    }
+
+    @media (max-width: 767px) {
+        flex-direction: column;
     }
 }
 
-form{
+form {
     @include m.flex(column, nowrap, space-between, center, 15px);
     padding: 25px;
     border-radius: 8px;
@@ -66,19 +88,40 @@ form{
     display: grid;
     grid-template-columns: 1fr;
     gap: 15px;
+
+    // para tablet
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    // para computadora de escritorio
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .banner-demografia {
     width: 25vw;   
-    height: auto;  
+    height: auto;
+    
+    // para tablet
+    @media (min-width: 768px) {
+        width: 40vw;
+    }
+
+    // para computadora de escritorio
+    @media (min-width: 1024px) {
+        width: 25vw;
+    }
 }
 
 .portada-manga {
     width: 200px;       
-    height: auto; 
-}
+    height: auto;
 
-.portada-manga:hover {
-    background-color: v.$color-del-fondo;
-}     
+    &:hover {
+        background-color: v.$color-del-fondo;
+    }
+}
+   
 
